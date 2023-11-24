@@ -14,13 +14,26 @@
 
 /* GENERICS */
 
+:root {
+  --pad40: 50px;
+  --min-h: 400px;
+}
+
 .container {
   width: 70%;
   height: 100%;
   margin: 0 auto;
 }
+.wrapper {
+  font-size: 0;
+  width: 100%;
+}
 
 /* HEADER */
+.hdr-page {
+  /* DEBUG */
+  background-color: blue;
+}
 
 /* HEADER NAV BAR */
 
@@ -59,5 +72,29 @@
   width: 70%;
   margin: 0 auto;
   /* DEBUG */
-  min-height: 300px;
+  background-color: fuchsia;
+  min-height: var(--min-h);
+}
+
+/* MAIN CONTENT */
+
+/* SECTION DEFAULT */
+.sctn > .container {
+  padding: var(--pad40) 0;
+}
+.sctn .w-60,
+.sctn .w-40 {
+  display: inline-block;
+}
+.w-60 {
+  width: 60%;
+  /* DEBUG */
+  background-color: cornflowerblue;
+  min-height: var(--min-h);
+}
+.w-40 {
+  width: 40%;
+  /* DEBUG */
+  background-color: rgb(220, 166, 175);
+  min-height: var(--min-h);
 }
