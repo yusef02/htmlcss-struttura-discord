@@ -5,3 +5,45 @@
   margin: 0;
   padding: 0;
 }
+
+/* DEBUG */
+
+* {
+  border: 1px dashed black;
+}
+
+/* GENERICS */
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.hdr-nav-bar {
+  padding: 20px 0;
+  /* DEBUG */
+  background-color: #add8e6;
+}
+.hdr-nav-bar > .container {
+  display: flex;
+}
+
+.container > * {
+  flex-grow: 1;
+}
+
+.hdr-nav-bar nav {
+  flex-basis: 50%;
+  padding: 5px;
+  text-align: center;
+}
+.hdr-nav-bar .hdr-logo {
+  padding: 5px;
+}
+.hdr-nav-bar .hdr-login {
+  padding: 5px;
+  text-align: right;
+}
