@@ -15,15 +15,17 @@
 /* GENERICS */
 
 .container {
-  width: 80%;
+  width: 70%;
   height: 100%;
   margin: 0 auto;
 }
 
 /* HEADER */
 
+/* HEADER NAV BAR */
+
 .hdr-nav-bar {
-  padding: 20px 0;
+  padding: 10px 0;
   /* DEBUG */
   background-color: #add8e6;
 }
@@ -46,4 +48,16 @@
 .hdr-nav-bar .hdr-login {
   padding: 5px;
   text-align: right;
+}
+
+/* HEADER INTRO PAGE */
+
+.hdr-page > .container {
+  padding: 40px 0;
+}
+.hdr-page .hdr-intro {
+  width: 70%;
+  margin: 0 auto;
+  /* DEBUG */
+  min-height: 300px;
 }
