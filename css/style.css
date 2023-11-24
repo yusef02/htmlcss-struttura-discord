@@ -78,23 +78,42 @@
 
 /* MAIN CONTENT */
 
-/* SECTION DEFAULT */
-.sctn > .container {
-  padding: var(--pad40) 0;
+main section:nth-child(2n) {
+  /* DEBUG */
+  background-color: lightgrey;
 }
-.sctn .w-60,
-.sctn .w-40 {
+
+main section[class^="sctn"] > .container {
+  padding: var(--pad40);
+}
+
+/* SECTION DEFAULT */
+
+/* .sctn > .container {
+  padding: var(--pad40) 0;
+} */
+
+.w-60,
+.w-40 {
   display: inline-block;
 }
+
 .w-60 {
   width: 60%;
   /* DEBUG */
   background-color: cornflowerblue;
   min-height: var(--min-h);
 }
+
 .w-40 {
   width: 40%;
   /* DEBUG */
   background-color: rgb(220, 166, 175);
   min-height: var(--min-h);
 }
+
+/* SECTION INVERTED */
+
+/* .sctn-inverted > .container {
+  padding: var(--pad40) 0;
+} */
