@@ -117,3 +117,11 @@ main section[class^="sctn"] > .container {
 /* .sctn-inverted > .container {
   padding: var(--pad40) 0;
 } */
+
+/* SECTION WIDE CONTENT */
+
+.wide-content {
+  /* DEBUG */
+  min-height: var(--min-h);
+  background-color: green;
+}
