@@ -125,3 +125,39 @@ main section[class^="sctn"] > .container {
   min-height: var(--min-h);
   background-color: green;
 }
+
+/* FOOTER PAGE */
+
+.ftr-page {
+  /* DEBUG */
+  background-color: rgb(10, 10, 10);
+}
+
+/* FOOTER SECTION INFO CONTACTS OTHERS */
+
+.ftr-page .ftr-sctn {
+  border-bottom: 1px solid white;
+}
+
+.ftr-page .ftr-sctn .container {
+  padding-top: 5px;
+  padding-bottom: 15px;
+  display: flex;
+}
+
+.ftr-page .container > div[class^="basis"] {
+  flex-wrap: wrap;
+}
+.ftr-page .container > .basis30 {
+  flex: 1 1 30%;
+  order: -1;
+  /* DEBUG */
+  min-height: var(--min-h);
+  background-color: lightcoral;
+}
+.ftr-page .container > .basis25 {
+  flex: 1 1 calc(70% / 4);
+  /* DEBUG */
+  min-height: var(--min-h);
+  background-color: lightgreen;
+}
