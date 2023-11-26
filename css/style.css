@@ -23,6 +23,8 @@
   width: 70%;
   height: 100%;
   margin: 0 auto;
+  /* DEBUG */
+  background-color: rgb(233, 233, 181);
 }
 .wrapper {
   font-size: 0;
@@ -46,19 +48,22 @@
   display: flex;
 }
 
-.container > * {
+/* .container > * {
   flex-grow: 1;
-}
+}       ho sbaglaito selettore perche se andavo a disporre il container con flex tutti gli elementi prendevano questa proprieta ovunque*/
 
 .hdr-nav-bar nav {
+  flex-grow: 1;
   flex-basis: 50%;
   padding: 5px;
   text-align: center;
 }
 .hdr-nav-bar .hdr-logo {
+  flex-grow: 1;
   padding: 5px;
 }
 .hdr-nav-bar .hdr-login {
+  flex-grow: 1;
   padding: 5px;
   text-align: right;
 }
@@ -161,3 +166,14 @@ main section[class^="sctn"] > .container {
   min-height: var(--min-h);
   background-color: lightgreen;
 }
+
+/* PIE' PAGINA */
+.ftr-page > .container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* DEBUG */
+  min-height: 50px;
+}
+/* progetto completato senza particolari difficoltà. argomento compreso altrettanto, imparando a costruire layout si semplifica molto il lavoro concentrandosi sui dettagli in un secondo momento  */
